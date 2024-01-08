@@ -17,10 +17,11 @@ import {
 } from '../assets'
 
 export const navLinks = [
-    {href : "#about", label : "About"},
-    {href : '#resume', label : "Resume"},
+    {href : "#home", label : "Home"},
+    {href : 'https://drive.google.com/file/d/1MuoMnualxtir20PAA_R4tA1Jm6RNmxKB/view?usp=drive_link', label : "Resume"},
     {href : "#experience", label : "Experience"},
     {href : "#projects", label : "Projects"},
+    {href : "#about", label : "About"},
     {href : "#contact", label : "Contact"},
 ];
 

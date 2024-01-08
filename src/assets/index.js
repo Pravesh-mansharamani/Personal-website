@@ -1,6 +1,7 @@
 import cross from './general/cross.svg';
 import copyright from './general/copyright.svg';
 import menu from './general/menu.svg';
+import pravesh from './general/pravesh.png';
 import github from './socialMedia/github.svg';
 import linkedin from './socialMedia/linkedin.svg';
 import twitterx from './socialMedia/twitterx.svg';
@@ -37,5 +38,6 @@ export {
     waterlooblockchain,
     uwaterloo,
     flowiseai,
-    mail
+    mail,
+    pravesh,
 }
