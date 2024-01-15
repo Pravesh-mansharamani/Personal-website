@@ -18,7 +18,7 @@ import {
 
 export const navLinks = [
     {href : "#home", label : "Home"},
-    {href : 'https://drive.google.com/file/d/1MuoMnualxtir20PAA_R4tA1Jm6RNmxKB/view?usp=drive_link', label : "Resume"},
+    {href : 'https://drive.google.com/file/d/19FkaDqmTHLjO6jttbwbgnBYjzMh9vGml/view?usp=sharing', label : "Resume"},
     {href : "#experience", label : "Experience"},
     {href : "#projects", label : "Projects"},
     {href : "#about", label : "About"},
