@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            background-color: #FFFAF0;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav a {
+            color: #000;
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+
+        <!-- <div id="gallery" class="gallery">
+        </div>
+
+        <script>
+            // Function to load images from the photos folder
+            function loadImages() {
+                const gallery = document.getElementById('gallery');
+                
+                // List all image filenames in the photos folder
+                const images = [
+                    'cooking1.jpg',
+                    'cooking2.jpg',
+                    'cooking3.jpg',
+                    // Add all other image filenames here
+                ];
+
+                images.forEach(imageName => {
+                    const img = document.createElement('img');
+                    img.src = `photos/${imageName}`;
+                    img.alt = `Photo: ${imageName}`;
+                    img.loading = 'lazy'; // Enable lazy loading for better performance
+                    gallery.appendChild(img);
+                });
+            }
+
+            // Call the function when the page loads
+            window.onload = loadImages;
+        </script> -->
+
+        <p>Coming soon ☺️</p>
+
+    </div>
+</body>
+</html>

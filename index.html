@@ -1,13 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pravesh Mansharamani</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            background-color: #FFFAF0;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav a {
+            color: #000;
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin-right: 10px;
+            color: #000;
+            text-decoration: underline;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Pravesh Mansharamani</h1>
+            <p>Student at the University of Waterloo studing mathematics with a passion for Blockchain, Machine Learning and Poker.</p>
+            <p>I'm the Director of Events at Waterloo Blockchain where I host fun and infomational events for blockchain community at Waterloo</p>
+            <p>I've worked as a Software Developer at Nethermind, FlowiseAI (YC S23) and Rivvi</p>
+            <p>Reach out : <a href="mailto:pmmansha@uwaterloo.ca">pmmansha@uwaterloo.ca</a></p>
+
+            <div class="social-links">
+                <a href="https://x.com/imthebigp" target="_blank">Twitter</a>
+                <!-- <a href="https://instagram.com/pravesh_29" target="_blank">Instagram</a> -->
+                <a href="https://linkedin.com/in/pravesh-mansharamani" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Pravesh-mansharamani" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("resumeModal");
+        var btn = document.getElementById("resumeLink");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
